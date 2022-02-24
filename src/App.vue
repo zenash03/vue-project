@@ -25,7 +25,19 @@ export default {
         {id : 5, title : 'Product 5', price : 5000},
       ]
     }
-  }
+  },
+  beforeCreate() {
+    console.log("Before Create")
+  },
+  created() {
+    console.log('Created')
+  },
+  beforeMount() {
+    console.log('Before Mount')
+  },
+  mounted() {
+    console.log('Mouted')
+  },
 }
 </script>
 
