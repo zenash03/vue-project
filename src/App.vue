@@ -1,7 +1,8 @@
 <template>
+<input type="text" v-model="cari" placeholder="cari.."/>
 <div v-if="products.length">
   <ul>
-    <li v-for="item in products" :key="item">
+    <li v-for="item in cariData" :key="item">
       {{ item.title }} -- {{ item.price }}
     </li>
   </ul>
@@ -17,27 +18,26 @@ export default {
   name: 'App',
   data() {
     return {
-      products: [
+      cari : "",
+      products: []
+    }
+  },
+  created() {
+    this.products = [
         {id : 1, title : 'Product 1', price : 2000},
         {id : 2, title : 'Product 2', price : 3000},
         {id : 3, title : 'Product 3', price : 4000},
         {id : 4, title : 'Product 4', price : 1000},
         {id : 5, title : 'Product 5', price : 5000},
       ]
+  },
+  computed: {
+    cariData() {
+      return this.products.filter((item) => {
+        return item.title.match(this.cari)
+      })
     }
-  },
-  beforeCreate() {
-    console.log("Before Create")
-  },
-  created() {
-    console.log('Created')
-  },
-  beforeMount() {
-    console.log('Before Mount')
-  },
-  mounted() {
-    console.log('Mouted')
-  },
+  }
 }
 </script>
 
