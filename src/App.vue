@@ -1,5 +1,5 @@
 <template>
-  <Header/>
+  <Header :text="text" />
 </template>
 
 <script>
@@ -7,6 +7,11 @@ import Header from "@/components/Header.vue";
 
 export default {
   name: 'App',
+  data() {
+    return {
+      text: "Ini adalah text dari app.vue"
+    }
+  },
   components: {
     Header
   }
