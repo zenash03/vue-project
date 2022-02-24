@@ -1,8 +1,8 @@
 # vue-project
-### Vue JS merupakan frontend javascript framework untuk membangun website dan user interfaces (UI).
-### Vue JS berjalan di sisis client (client-side) dan umum digunakan untk membuat single-page-application (SPA).
-### Vue JS mudah diintergrasikan dengan project yang sudah ada dengan menggunakan CDN.
-### Selain itu, kita juga dapat dengan mudah membuat full-stack aplikasi dengan membuat API di sisi server.
+- Vue JS merupakan frontend javascript framework untuk membangun website dan user interfaces (UI).
+- Vue JS berjalan di sisis client (client-side) dan umum digunakan untk membuat single-page-application (SPA).
+- Vue JS mudah diintergrasikan dengan project yang sudah ada dengan menggunakan CDN.
+- Selain itu, kita juga dapat dengan mudah membuat full-stack aplikasi dengan membuat API di sisi server.
 
 ### Kenapa mengunakan Vue JS ?
 - mudah membuat frontend Aplikasi dan Website Dinamis.
