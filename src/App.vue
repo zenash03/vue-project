@@ -1,5 +1,5 @@
 <template>
-  <Header :text="text" />
+  <Header @changeTitle="ubahText" :text="text" />
 </template>
 
 <script>
@@ -14,6 +14,11 @@ export default {
   },
   components: {
     Header
+  },
+  methods: {
+    ubahText(newText){
+      this.text = newText
+    }
   }
 }
 </script>
