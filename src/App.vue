@@ -1,5 +1,6 @@
 <template>
   <h1>Name : {{ name }}</h1>
+  <button @click="changeName">Ganti Nama</button>
 </template>
 
 <script>
@@ -9,6 +10,11 @@ export default {
   data() {
     return {
       name : 'Wyrtzen'
+    }
+  },
+  methods: {
+    changeName(){
+      this.name = "Luke Michael"
     }
   },
   components: {}
