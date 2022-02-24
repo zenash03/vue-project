@@ -1,5 +1,7 @@
 <template>
-  <a v-bind:href="link">GO To Mfikri</a>
+  <input type="text" v-model="name" />
+  <br />
+  <h2>{{ name }}</h2>
 </template>
 
 <script>
@@ -8,7 +10,7 @@ export default {
   name: 'App',
   data() {
     return {
-      link : 'https://mfikri.com'
+      name : ""
     }
   }
 }
