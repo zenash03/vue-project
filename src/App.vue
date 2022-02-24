@@ -1,6 +1,5 @@
 <template>
-  <h1>Name : {{ name }}</h1>
-  <button @click="changeName">Ganti Nama</button>
+  <a v-bind:href="link">GO To Mfikri</a>
 </template>
 
 <script>
@@ -9,15 +8,9 @@ export default {
   name: 'App',
   data() {
     return {
-      name : 'Wyrtzen'
+      link : 'https://mfikri.com'
     }
-  },
-  methods: {
-    changeName(){
-      this.name = "Luke Michael"
-    }
-  },
-  components: {}
+  }
 }
 </script>
 
